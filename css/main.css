@@ -1,4 +1,9 @@
-.hero-image {
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+div.hero-image {
   background-image: url("black-coffee-business-cellphone-860379.jpg")
   height: 50%;
   background-position: center;
@@ -7,11 +12,36 @@
   position: relative;
 }
 
+div.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
 .hero-text {
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
   color: white;
 }
