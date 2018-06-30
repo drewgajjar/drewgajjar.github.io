@@ -1,137 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" type="text/css" href="/css/main.css">
-   <link rel="stylesheet" href="/w3css/3/w3.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <title> Drew Gajjar </title>  
+   
 </head>
 
 <body>
-   <link rel="stylesheet" href="/w3css/3/w3.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-   <link rel="stylesheet" type="text/css" href="/css/main.css"
    
-   <div id="mySidenav" class="sidenav">
-     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-     <a href="#">About</a>
-     <a href="#">Services</a>
-     <a href="#">Clients</a>
-     <a href="#">Contact</a>
-   </div>
-
-   <div id="main">
-     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-   </div>
-
-   <div class="homepage-hero-module">
-      <div class="video-container">
-         <div class="filter"></div>
-         <video autoplay loop class="fillWidth">
-            <source src="Working-Space.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="Working-Space.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="Working-Space.ogv" type="video/ogv" />Your browser does not support the video tag. I suggest you upgrade your browser.
-         </video>
-         <div class="poster hidden">
-            <img src="PATH_TO_JPEG" alt="">
-         </div>
-      </div>
-   </div>
-    
-   <script>   
-          function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-          document.classList.toggle("change");
-         }
-
-         function closeNav() {
-         document.getElementById("mySidenav").style.width = "0";
-         document.getElementById("main").style.marginLeft= "0";
-         document.body.style.backgroundColor = "white";
-         }      
-         
-         //jQuery is required to run this code
-         $( document ).ready(function() {
-
-             scaleVideoContainer();
-
-             initBannerVideoSize('.video-container .poster img');
-             initBannerVideoSize('.video-container .filter');
-             initBannerVideoSize('.video-container video');
-
-             $(window).on('resize', function() {
-                 scaleVideoContainer();
-                 scaleBannerVideoSize('.video-container .poster img');
-                 scaleBannerVideoSize('.video-container .filter');
-                 scaleBannerVideoSize('.video-container video');
-             });
-
-         });
-
-         function scaleVideoContainer() {
-
-             var height = $(window).height() + 5;
-             var unitHeight = parseInt(height) + 'px';
-             $('.homepage-hero-module').css('height',unitHeight);
-
-         }
-
-         function initBannerVideoSize(element){
-
-             $(element).each(function(){
-                 $(this).data('height', $(this).height());
-                 $(this).data('width', $(this).width());
-             });
-
-             scaleBannerVideoSize(element);
-
-         }
-
-         function scaleBannerVideoSize(element){
-
-             var windowWidth = $(window).width(),
-             windowHeight = $(window).height() + 5,
-             videoWidth,
-             videoHeight;
-
-             // console.log(windowHeight);
-
-             $(element).each(function(){
-                 var videoAspectRatio = $(this).data('height')/$(this).data('width');
-
-                 $(this).width(windowWidth);
-
-                 if(windowWidth < 1000){
-                     videoHeight = windowHeight;
-                     videoWidth = videoHeight / videoAspectRatio;
-                     $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
-
-                     $(this).width(videoWidth).height(videoHeight);
-                 }
-
-                 $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-
-             });
-         }
-   </script>
 </body>
    
 <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
-   <link rel="stylesheet" type="text/css" href="/css/main.css">
-   <link rel="stylesheet" href="/w3css/3/w3.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">  
-   <a href="#"><i class="fa fa-facebook-official"></i></a>
-   <a href="#"><i class="fa fa-pinterest-p"></i></a>
-   <a href="#"><i class="fa fa-twitter"></i></a>
-   <a href="#"><i class="fa fa-flickr"></i></a>
-   <a href="#"><i class="fa fa-linkedin"></i></a>
-   <p class="w3-medium">
-   Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-   </p>
+   
 </footer>
 
    
