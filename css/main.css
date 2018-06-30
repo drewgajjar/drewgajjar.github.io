@@ -15,7 +15,7 @@ div.hero-image {
 div.hero-text {
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  position: absolute;
+  position: fixed;
   top: 150px;
   left: 150px;
   transform: translate(-50%, -50%);
