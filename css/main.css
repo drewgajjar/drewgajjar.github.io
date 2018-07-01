@@ -29,6 +29,7 @@ body, html {
 
 /* The side navigation menu */
 .sidenav {
+    font-family: 'Raleway', sans-serif;
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -45,6 +46,7 @@ body, html {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-family: 'Raleway', sans-serif;
     font-size: 25px;
     color: #818181;
     display: block;
@@ -53,6 +55,7 @@ body, html {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover{
+    font-family: 'Raleway', sans-serif;
     color: #f1f1f1;
 }
 
