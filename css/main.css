@@ -79,3 +79,15 @@ body, html {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+
+/* Slide 2 */
+#slide-2 .bcg {background-image:url("https://drewgajjar.github.io/black-coffee-business-cellphone-860379.jpg")}
+#slide-2 .hsContent {
+    margin-left: -450px;
+    top: auto;
+}
+#slide-2 h2 {
+    position: fixed;
+    top: 70%;
+}
