@@ -129,6 +129,7 @@ h1 {
   text-align: center;
   font-size: 150px;
   font-weight: 400;
+
 }
 
 .MainContainer {
@@ -173,5 +174,6 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
