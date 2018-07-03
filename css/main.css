@@ -135,7 +135,7 @@ h1 {
   perspective: 1px;
   transform-style: preserve-3d;
   height: 100vh;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .ContentContainer {
