@@ -1,91 +1,12 @@
 <!-- <!DOCTYPE html>
-<html>
-
-<head>
    <title> Drew Gajjar </title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="shortcut icon" href="Website logo.png" />
    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="https://drewgajjar.github.io/css/main.css">
-</head>
- 
-<body>
-   <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-   </div>
+   <link rel="stylesheet" type="text/css" href="https://drewgajjar.github.io/css/main.css" -->
 
 
-   <span style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776; Menu</span>
    
-   <div class="hero-section">
-      <div class="hero-section-text">
-         <h1>Drew Gajjar</h1>
-      </div>
-   </div>
-   
-   <section id="slide-1" class="homeSlide">
-      <div class="bcg"
-         data-center="background-position: 50% 0px;"
-         data-top-bottom="background-position: 50% -100px;"
-         data-anchor-target="#slide-1"
-      >
-         <div class="hsContainer">
-            <div class="hsContent"
-                data-center="bottom: 200px; opacity: 1"
-                data-top="bottom: 1200px; opacity: 0"
-                data-anchor-target="#slide-1 h2"
-            >
-               <h2>Simple parallax scrolling is...</h2>
-            </div>
-         </div>
-      </div>
-   </section>
-   
-   <section id="slide-2" class="homeSlide">
-      <div class="bcg"
-        data-center="background-position: 50% 0px;"
-        data-top-bottom="background-position: 50% -100px;"
-        data-bottom-top="background-position: 50% 100px;"
-        data-anchor-target="#slide-2"
-      >
-         <div class="hsContainer">
-            <div class="hsContent"
-                data-center="opacity: 1"
-                data-center-top="opacity: 0"
-                data--100-bottom="opacity: 0;"
-                data-anchor-target="#slide-2"
-            >
-                <h2>great for story telling websites.</h2>
-            </div>
-         </div>
-      </div>
-   </section>
-   
-   <script>
-      function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-      }
-
-      function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-          document.getElementById("main").style.marginLeft= "0";
-          document.body.style.backgroundColor = "white";
-      }
-   </script>
-   <script src="https://github.com/Prinzhorn/skrollr/blob/master/dist/skrollr.min.js">
-      var s = skrollr.init();
-      s.refresh($('.homeSlide'));
-   </script>
-</body>  
-<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge"> 
-</footer>
-</html>--> 
 
 
 <!DOCTYPE html>
@@ -100,6 +21,33 @@
 </head>
    
 <body> 
+   <nav class="menu">
+       <header>Menu <span>×</span></header>
+       <ol>
+           <li class="menu-item"><a href="#0">Home</a></li>
+           <li class="menu-item"><a href="#0">About</a></li>
+           <li class="menu-item">
+               <a href="#0">Widgets</a>
+               <ol class="sub-menu">
+                   <li class="menu-item"><a href="#0">Big Widgets</a></li>
+                   <li class="menu-item"><a href="#0">Bigger Widgets</a></li>
+                   <li class="menu-item"><a href="#0">Huge Widgets</a></li>
+               </ol>
+           </li>
+           <li class="menu-item">
+               <a href="#0">Kabobs</a>
+               <ol class="sub-menu">
+                   <li class="menu-item"><a href="#0">Shishkabobs</a></li>
+                   <li class="menu-item"><a href="#0">BBQ kabobs</a></li>
+                   <li class="menu-item"><a href="#0">Summer kabobs</a></li>
+               </ol>
+           </li>
+           <li class="menu-item"><a href="#0">Contact</a></li>
+       </ol>
+       <footer><button aria-label="Toggle Menu">Toggle</button></footer>
+   </nav> 
+   
+   
    <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#">About Me</a>
@@ -141,6 +89,41 @@
           document.getElementById("main").style.marginLeft = "0";
           document.body.style.backgroundColor = "white";
       }
+      
+      var $els = $('.menu a, .menu header');
+      var count = $els.length;
+      var grouplength = Math.ceil(count/3);
+      var groupNumber = 0;
+      var i = 1;
+      $('.menu').css('--count',count+'');
+      $els.each(function(j){
+          if ( i > grouplength ) {
+              groupNumber++;
+              i=1;
+          }
+          $(this).attr('data-group',groupNumber);
+          i++;
+      });
+
+      $('.menu footer button').on('click',function(e){
+          e.preventDefault();
+          $els.each(function(j){
+              $(this).css('--top',$(this)[0].getBoundingClientRect().top + ($(this).attr('data-group') * -15) - 20);
+              $(this).css('--delay-in',j*.1+'s');
+              $(this).css('--delay-out',(count-j)*.1+'s');
+          });
+          $('.menu').toggleClass('closed');
+          e.stopPropagation();
+      });
+
+      // run animation once at beginning for demo
+      setTimeout(function(){
+          $('.menu footer button').click();
+          setTimeout(function(){
+              $('.menu footer button').click();
+          }, (count * 100) + 500 );
+      }, 1000);
+
    </script>
    
 </body>
