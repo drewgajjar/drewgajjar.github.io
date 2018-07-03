@@ -29,13 +29,6 @@ body, html {
   font-family: 'Raleway', sans-serif;
   font-size: 85%;
   text-shadow: 1px 1px 2px #0a0a0a;
-}*/
-
-
-html, body {
-  font-family: Open Sans;
-  font-size: 18px;
-  line-height: 28px;
 }
 
 .sidenav {
@@ -76,7 +69,6 @@ html, body {
     margin-left: 50px;
 }
 
-
 #main {
     transition: margin-left .5s;
     padding: 20px;
@@ -87,6 +79,8 @@ html, body {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+
 
 .block{
   width: 100%;
@@ -116,6 +110,12 @@ html, body {
   left: 50%;
   transform: translate(-50%,0);
   pointer-events: none
+}*/
+
+html, body {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 h1 {
