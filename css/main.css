@@ -116,6 +116,8 @@ body, html {
         font-family: Open Sans;
         font-size: 18px;
         line-height: 28px;
+        margin: 0;
+        padding: 0;
       }
 
 
