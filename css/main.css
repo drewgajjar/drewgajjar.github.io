@@ -153,8 +153,8 @@ p {
 }
 
 .ParallaxContainer {
-  /*display: flex;
-  flex: 1 0 auto;*/
+  display: block;
+  /*flex: 1 0 auto;*/
   position: relative;
   z-index: -1;
   height: 100px;
