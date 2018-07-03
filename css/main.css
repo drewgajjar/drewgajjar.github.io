@@ -122,7 +122,7 @@ h1 {
   letter-spacing: -15px;
   font-family: Open Sans;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
   text-align: center;
   font-size: 150px;
   font-weight: 400;
@@ -133,7 +133,7 @@ h1 {
   perspective: 1px;
   transform-style: preserve-3d;
   height: 100vh;
-  overflow-x: auto;
+  overflow-x: visible;
 }
 
 .ContentContainer {
