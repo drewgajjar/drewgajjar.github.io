@@ -32,6 +32,11 @@ body, html {
 }*/
 
 
+html, body {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 28px;
+}
 
 .sidenav {
     font-family: 'Raleway', sans-serif;
@@ -45,12 +50,6 @@ body, html {
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s; 
-
-html, body {
-  font-family: Open Sans;
-  font-size: 18px;
-  line-height: 28px;
-}
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
