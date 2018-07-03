@@ -164,6 +164,8 @@ p {
   align-items: center;
   transform: translateZ(-1px) scale(2);
   background: url(https://drewgajjar.github.io/black-coffee-business-cellphone-860379.jpg);
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
