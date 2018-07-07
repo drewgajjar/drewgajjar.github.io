@@ -28,7 +28,7 @@ h1 {
 .ContentContainer {
   position: relative;
   display: white;
-  background-color: white;
+  background-color: black;
   z-index: 1;
 }
 
