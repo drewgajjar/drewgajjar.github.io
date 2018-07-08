@@ -79,20 +79,28 @@
 .timeline-small-body .date {
   width: 23%;
   font-size: 1em;
-  padding-top: 0.4rem;
+  padding-top: 0rem;
   padding-right: 2rem;
 }
 .timeline-small-body .desc {
   width: 50%;
 }
 .timeline-small-body h3 {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 400;
   margin: 0;
 }
 .timeline-small-body h4 {
   margin: 0;
-  font-size: 0.7em;
+  font-size: 0.85em;
+  font-weight: 400;
+  color: Black;
+  font-style: italic;
+}
+.timeline-small-body h5 {
+  margin: 0;
+  font-size: 0.75em;
   font-weight: 400;
   color: #808080;
+  padding-left: 1rem;
 }
