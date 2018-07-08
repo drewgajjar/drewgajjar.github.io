@@ -13,13 +13,13 @@
   color: #fff;
   position: relative;
 }
-.color-overlay {
+/*.color-overlay {
   padding: 3em 2em;
   box-sizing: border-box;
-  background: rgba(32, 178, 170, 0.5);
+  background: rgba(32, 178, 170, 0.5);*/
 }
 .header-name {
-  font-size: 1.6em;
+  font-size: 3em;
 }
 .header-sub {
   text-transform: uppercase;
