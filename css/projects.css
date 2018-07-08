@@ -1,106 +1,97 @@
-#scroll-animate
-{
+.timeline-small {
+  max-width: 350px;
+  max-height: 630px;
   overflow: hidden;
+  margin: 30px auto 0;
+  box-shadow: 0 0 40px #a0a0a0;
+  font-family: 'Open Sans', sans-serif;
 }
-
-#scroll-animate-main
-{
-  width: 100%;
-  left: 0;
-  position: fixed;
-}
-
-#heightPage,
-#heightScroll
-{
-  width: 10px;
-  top: 0;
-  position: absolute;
-  z-index: 99;
-}
-
-#heightPage
-{
-  left: 0;
-}
-
-#heightScroll
-{
-  right: 0;
-}
-
-header
-{
-  width: 100%;
-  height: 100%;
-  background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
-  top: 0;
-  position: fixed;
-  z-index: -1;
-}
-
-footer
-{
-  width: 100%;
-  height: 300px;
-  background: gray;
-  bottom: -300px;
-  position: fixed;
-  z-index: -1;
-}
-
-.content
-{
-  height: 1000px;
-  min-height: 1000px;
-  background: #ededed;
-  position: relative;
-  z-index: 1;
-}
-
-.wrapper-parallax {
-  margin-top: 100%;
-  margin-bottom: 300px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-}
-
-h1{
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: Helvetica;
-  font-size: 150px;
+.header {
+  background: url(https://marclesterkasilag.github.io/assets/img/kervatar.jpg);
+  background-position: bottom center;
+  background-size: cover;
   color: #fff;
+  position: relative;
 }
-
-header h1{}
-
-.content h1{
-  line-height: 1000px;
-  color: #999;
+.color-overlay {
+  padding: 3em 2em;
+  box-sizing: border-box;
+  background: rgba(32, 178, 170, 0.5);
 }
-
-footer h1
-{
-  line-height: 300px;
+.header-name {
+  font-size: 1.6em;
 }
-
-header,
-footer,
-#scroll-animate-main
-{
-  -webkit-transition-property: all;
-     -moz-transition-property: all;
-      transition-property: all;
-
-  -webkit-transition-duration: 0.4s;
-     -moz-transition-duration: 0.4s;
-      transition-duration: 0.4s;
-
-  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-      transition-timing-function: cubic-bezier(0, 0, 0, 1);
+.header-sub {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.6em;
+  letter-spacing: 2px;
+  margin-top: 2px;
+}
+.timeline-small-body ul {
+  padding: 1em 0 0 2em;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+.timeline-small-body ul::before {
+  content: ' ';
+  height: 100%;
+  width: 5px;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 0;
+  left: 2.4em;
+  z-index: -1;
+}
+.timeline-small-body li div {
+  display: inline-block;
+  margin: 1em 0;
+  vertical-align: top;
+}
+.timeline-small-body .bullet {
+  width: 1rem;
+  height: 1rem;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 1;
+  margin-right: 1rem;
+  margin-top: 7%;
+}
+.timeline-small-body .bullet.pink {
+  background-color: hotpink;
+  border: 3px solid #f93b69;
+}
+.timeline-small-body .bullet.green {
+  background-color: lightseagreen;
+  border: 3px solid #b0e8e2;
+}
+.timeline-small-body .bullet.blue {
+  background-color: aquamarine;
+  border: 3px solid cadetblue;
+}
+.timeline-small-body .bullet.orange {
+  background-color: salmon;
+  border: 3px solid #eb8b6e;
+}
+.timeline-small-body .date {
+  width: 23%;
+  font-size: 0.75em;
+  padding-top: 0.4rem;
+  padding-right: 2rem;
+}
+.timeline-small-body .desc {
+  width: 50%;
+}
+.timeline-small-body h3 {
+  font-size: 0.9em;
+  font-weight: 400;
+  margin: 0;
+}
+.timeline-small-body h4 {
+  margin: 0;
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #808080;
 }
