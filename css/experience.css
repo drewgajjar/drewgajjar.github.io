@@ -6,6 +6,14 @@
   box-shadow: 0 0 40px #a0a0a0;
   font-family: 'Open Sans', sans-serif;
 }
+.timeline-small-work {
+  max-width: 75vw;
+  max-height: 10000px;
+  overflow: hidden;
+  margin: 75px auto 0;
+  box-shadow: 0 0 40px #a0a0a0;
+  font-family: 'Open Sans', sans-serif;
+}
 .header-work {
   background: url(https://drewgajjar.github.io/images/chicago.jpg);
   background-position: bottom center;
@@ -177,7 +185,6 @@ img {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
-
 
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
