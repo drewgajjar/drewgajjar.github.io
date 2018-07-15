@@ -1,3 +1,4 @@
+
 .timeline-small {
   max-width: 75vw;
   max-height: 10000px;
@@ -31,12 +32,12 @@
   height:45vh;
 }
 .header-skills {
-  background: url(https://images.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
-  background-position: center center;
+  background: url(https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: top center;
   background-size: cover;
   color: #fff;
   position: relative;
-  height:30vh;
+  height:45vh;
 }
 .color-overlay {
   padding: 3em 2em;
@@ -101,9 +102,15 @@
   background-color: salmon;
   border: 3px solid #eb8b6e;
 }
+.timeline-small-body .bullet.black {
+  background-color: #636363;
+  border: 3px solid #000000;
+}
 .timeline-small-body .date {
   width: 23%;
-  font-size: 1em;
+  font-size: 1.10em;
+  font-family: 'Raleway', sans-serif;
+  font-weight:800;
   padding-top: 0rem;
   padding-right: 2rem;
 }
@@ -113,13 +120,22 @@
 .timeline-small-body h3 {
   font-size: 1em;
   font-weight: 400;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
+}
+.timeline-small-body h6 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 15px;
+  font-style:italic;
+  font-family: 'Raleway', sans-serif;
 }
 .timeline-small-body h4 {
   margin: 0;
   font-size: 0.85em;
   font-weight: 400;
   color: Black;
+  font-family: 'Raleway', sans-serif;
   font-style: italic;
 }
 .timeline-small-body h5 {
@@ -127,6 +143,7 @@
   font-size: 0.75em;
   font-weight: 400;
   color: #808080;
+  font-family: 'Raleway', sans-serif;
   padding-left: 1rem;
 }
 img {
