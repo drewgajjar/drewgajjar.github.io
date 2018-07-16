@@ -91,13 +91,13 @@
   background-color: hotpink;
   border: 3px solid #f93b69;
 }
-.timeline-small-body .bullet.green {
-  background-color: lightseagreen;
-  border: 3px solid #b0e8e2;
+.timeline-small-body .bullet.uiuc {
+  background-color: #E84A27;
+  border: 3px solid #174589;
 }
 .timeline-small-body .bullet.blue {
-  background-color: aquamarine;
-  border: 3px solid cadetblue;
+  background-color: white;
+  border: 3px solid #42a4f4;
 }
 .timeline-small-body .bullet.orange {
   background-color: salmon;
@@ -140,7 +140,7 @@
   font-style: italic;
 }
 .timeline-small-body h5 {
-  margin: 0;
+  margin: 10px;
   font-size: 0.75em;
   font-weight: 400;
   color: #808080;
