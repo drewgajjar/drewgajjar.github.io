@@ -91,6 +91,10 @@
   background-color: hotpink;
   border: 3px solid #f93b69;
 }
+.timeline-small-body .bullet.yellow {
+  background-color:#fff64c;
+  border: 3px solid #e8cc00;
+}
 .timeline-small-body .bullet.uiuc {
   background-color: #E84A27;
   border: 3px solid #174589;
