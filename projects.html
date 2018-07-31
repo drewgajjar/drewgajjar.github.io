@@ -8,11 +8,20 @@
   <link rel="stylesheet" href="https://drewgajjar.github.io/css/projects.css" type="text/css">
   </head>
   <body>
+     <div id="mySidenav" class="sidenav">
+      	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      	<a href="https://drewgajjar.github.io">About Me</a>
+      	<a href="https://drewgajjar.github.io/experience.html">Experience, Education, & Skills</a>
+      	<a href="https://drewgajjar.github.io/projects.html">Projects</a>
+      	<a href="#">Contact</a>
+     </div>
+     <span style="font-size:30px;font-weight:800;top:0;line-height: 50px;color:white;background-color:black;font-family:'Raleway',sans-serif;cursor:pointer;position:fixed;z-index: 1;width:100%;" onclick="openNav()">  &#9776; Menu</span>
+   
      <div class="MainContainer">
-     <div class="ParallaxContainer">
-       <h1>
-         Projects
-       </h1>
+     	<div class="ParallaxContainer">
+       	<h1>
+         	Projects
+       	</h1>
      </div>
 	
     <div class="ContentContainer">
@@ -86,7 +95,19 @@
          $('html, body').animate({
              scrollTop: parseInt($("#top").offset().top)
          }, 400);
-     });    
+     });
+	  
+     function openNav() {
+         document.getElementById("mySidenav").style.width = "250px";
+         document.getElementById("main").style.marginLeft = "250px";
+         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+          document.body.style.backgroundColor = "white";
+      }	  
   </script>
   </body>
 </html>
