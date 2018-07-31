@@ -151,7 +151,7 @@
         left: 0;
         padding-top: 100px;
         background: #ffffff;
-        background-color: #fafafa;
+        background-color: white;
         z-index: 103;
         visibility: hidden;
         -webkit-transform: translateY(-100%);
